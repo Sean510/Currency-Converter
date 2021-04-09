@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',() => {
         request.onload = () => {
             const data = JSON.parse(request.responseText);
             console.log(data)
-            results_html_element = proccess_response(data);
+            results_html_element = process_response(data);
 
             document.querySelector("#result").innerHTML = results_html_element;
         }
